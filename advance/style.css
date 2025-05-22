@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background:linear-gradient(135deg,#7f41ff,#a15eff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 217vh;
+}
+
+.container {
+  background: linear-gradient(135deg, #7f41ff, #a15eff);
+  padding: 40px;
+}
+
+.faq-card {
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  padding: 0px;
+  max-width: 1000px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  nav-down: auto;
+  align-items: center;
+}
+
+.illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  left: -70px;
+  max-width: 2000px;
+  position: relative;
+  background-repeat: no-repeat;
+
+}
+
+.illustration img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pattern{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: auto;
+    max-width: -30px;
+    
+}
+.pattern img{
+    position: absolute;
+    max-width: -30%;
+    height: auto;
+}
+
+.box {
+    position: absolute;
+    nav-up: 50px;
+    nav-right: -20px;
+    left: -25px;
+    bottom: 30px;
+    max-width: 120px;
+}
+
+.box img{
+    max-width: 120%;
+    height: flex;
+}
+
+.faq-content {
+  flex: 1;
+  padding: 0 30px;
+}
+
+.faq-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-item input {
+  display: none;
+}
+
+.faq-item label {
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.faq-item label:hover {
+  background: #8A52FF;
+}
+
+.faq-item .answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  color: #555;
+  font-size: 14px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item input:checked ~ .answer {
+  max-height: 100px;
+  padding: 10px;
+}
